@@ -3,20 +3,16 @@
    <head>
       <meta charset="utf-8">
       <title>Undesrtanding the document Ready function</title>
-      <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js">
-
-
-      </script>
+      <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js"></script>
       <script type="text/javascript">
-
+         $(document).ready(function () {
+            $("p").click(function() {
+               alert("Welcome to Packt Publishing");
+            });
+         });
       </script>
-   </head>
-   <body>
-      $("p").click(function() {
-         alert("Welcome to Packt Publishing");
-</script>
 </head>
 <body>
-<p>Click here to understand the document ready feature</p>
-   </body>
+   <p>Click here to understand the document ready feature</p>
+</body>
 </html>
